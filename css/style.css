@@ -2,7 +2,7 @@
 
 body {
   font-family: "Sen", sans-serif;
-  /* font-size: ; */
+  font-size: 16px;
   color: var(--text);
   background-color: var(--base);
 }
@@ -45,6 +45,7 @@ body {
   background: var(--light-grey);
   height: 1px;
 }
+
 .hover-effect:after,
 .hover-effect::before {
   transition: all 0.5s;
@@ -54,7 +55,6 @@ body {
   width: 100%;
 }
 
-/* -- INDEX STYLE PAGE -- */
 /* -- HEADER -- */
 
 .container {
@@ -62,20 +62,17 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 
 .header-container {
   padding-top: 24px;
   padding-bottom: 24px;
-  outline: 1px solid red;
 }
 
 .header-navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  outline: 1px solid red;
 }
 
 .header-mob-btn {
@@ -83,12 +80,7 @@ body {
   height: 24px;
   background-color: transparent;
   border: none;
-  cursor: pointer;
 }
-
-/* .header-btn-icon {
-  background: ;
-} */
 
 /* -- HERO -- */
 
@@ -96,12 +88,11 @@ body {
   max-width: 360px;
   margin: 0 auto;
   margin-bottom: 48px;
-  outline: 1px solid red;
 }
 
 .hero-container {
   padding-bottom: 48px;
-  border-bottom: 1px dashed #8491a0;
+  border-bottom: 1px dashed var(--light-grey);
 }
 
 .hero-title {
@@ -132,7 +123,7 @@ body {
   font-weight: 700;
   line-height: 1.5;
   text-transform: uppercase;
-  color: #8491a0;
+  color: var(--light-grey);
   margin-top: 48px;
   margin-bottom: 8px;
 }
@@ -144,15 +135,9 @@ body {
   margin-bottom: 40px;
 }
 
-.experience-list {
-}
-
-.experience-list-item {
-}
-
 .experience-item-number {
   font-size: 117px;
-  color: #8491a0;
+  color: var(--light-grey);
 }
 
 .experience-item-accent {
@@ -177,7 +162,7 @@ body {
 
 .experience-item-text {
   line-height: 1.5;
-  color: #8491a0;
+  color: var(--light-grey);
   margin-bottom: 44px;
 }
 
@@ -186,9 +171,6 @@ body {
 }
 
 /* -- PHILOSOPHY & VALUES -- */
-
-.philosophy {
-}
 
 .philosophy-container {
   padding-top: 48px;
@@ -223,9 +205,6 @@ body {
 
 /* -- SKILLSET -- */
 
-.skillset {
-}
-
 .skillset-container {
   padding-top: 64px;
   padding-bottom: 64px;
@@ -245,9 +224,6 @@ body {
   font-size: 18px;
   line-height: 1.5;
   margin-bottom: 69px;
-}
-
-.skillset-list {
 }
 
 .bg-none {
@@ -280,6 +256,7 @@ body {
 .skillset-list-icon {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .skillset-list-icon-item {
@@ -287,8 +264,8 @@ body {
   justify-content: center;
   align-items: center;
   fill: var(--light-grey);
-  width: 180px;
-  height: 140px;
+  width: 160px;
+  height: 120px;
 }
 
 .skillset-list-icon-item:nth-child(even) {
@@ -310,12 +287,7 @@ body {
 .skillset-list-icon-svg {
 }
 
-/* -- CLIENTS -- */
-
 /* -- MY PROJECTS -- */
-
-.projects {
-}
 
 .container-projects {
   padding-top: 64px;
@@ -323,6 +295,7 @@ body {
 }
 
 .projects-title {
+  font-size: 16px;
   color: var(--light-grey);
   font-weight: 700;
   line-height: 1.5;
@@ -335,9 +308,6 @@ body {
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 80px;
-}
-
-.projects-list {
 }
 
 .projects-list-item {
@@ -354,8 +324,6 @@ body {
 
 .projects-item-image {
   max-width: 360px;
-  /* margin: 0 auto; */
-  outline: 1px solid red;
 }
 
 .projects-item-box {
@@ -378,26 +346,10 @@ body {
 
 /* -- SOCIAL INFO -- */
 
-.social {
-}
-
 .container-social-bg-white {
   background-color: var(--text);
   padding-top: 48px;
   padding-bottom: 51px;
-}
-
-.social-title {
-}
-
-.container {
-}
-
-.social-box {
-  outline: 1px solid red;
-}
-
-.social-box-instagram {
 }
 
 .social-instagram-title {
@@ -423,15 +375,11 @@ body {
 .social-instagram-img {
   max-width: 360px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 
 .container-social-bg-dark {
   padding-top: 64px;
   padding-bottom: 112px;
-}
-
-.social-box-dribbble {
 }
 
 .social-box-dribbble-title {
@@ -455,15 +403,10 @@ body {
 
 .social-box-dribbble-img {
   margin-top: 64px;
+  border-radius: 10px;
 }
 
 /* -- ABOUT ME -- */
-
-.about-title {
-}
-
-.container {
-}
 
 .container-about {
   padding-bottom: 96px;
@@ -502,11 +445,8 @@ body {
   margin-bottom: 0;
 }
 
-.about-item-img {
-}
-
 .about-item-box {
-  padding: 32px 15px; /* 32 для всех сторон для 360 */
+  padding: 32px 15px;
 }
 
 .about-item-paragraph {
@@ -533,12 +473,6 @@ body {
 
 /* -- PHOTOGRAPHY -- */
 
-.photography {
-}
-
-.container {
-}
-
 .container-photography {
   padding-bottom: 96px;
 }
@@ -560,13 +494,13 @@ body {
 .photography-btn-box {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px 20px; /* 24px для 360 */
+  gap: 20px 20px;
   justify-content: center;
   margin-bottom: 40px;
 }
 
 .photography-btn {
-  width: 200px; /* 148px для 360 */
+  width: 200px;
   color: var(--text);
   font-size: 18px;
   font-weight: 700;
@@ -614,16 +548,19 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .started-form-box-label {
   line-height: 1.5;
   color: var(--text);
   margin-bottom: 8px;
 }
+
 .started-form-box-input {
   height: 50px;
   background-color: var(--level1);
   border: none;
   margin-bottom: 40px;
+  color: var(--text);
 }
 
 .started-form-box-input:focus {
@@ -637,23 +574,20 @@ body {
 }
 
 .started-form-submit {
-  width: 320px;
-  height: 75px;
+  width: 280px;
+  height: 65px;
   background: transparent;
-  cursor: pointer;
   color: var(--text);
   font-size: 18px;
   font-weight: 700;
   line-height: 1.5;
   text-transform: uppercase;
   border: none;
-  cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
   background: linear-gradient(0deg, var(--primary) 0%, var(--primary) 100%);
   padding: 0;
-  border: none;
 }
 
 .started-form-submit span {
@@ -664,6 +598,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 .started-form-submit:before,
 .started-form-submit:after {
   position: absolute;
@@ -673,14 +608,17 @@ body {
   background: var(--primary);
   transition: all 0.3s ease;
 }
+
 .started-form-submit:before {
   height: 0%;
   width: 2px;
 }
+
 .started-form-submit:after {
   width: 0%;
   height: 2px;
 }
+
 .started-form-submit:hover {
   color: var(--primary);
   background: transparent;
@@ -710,28 +648,26 @@ body {
   background: var(--primary);
   transition: all 0.3s ease;
 }
+
 .started-form-submit span:before {
   width: 2px;
   height: 0%;
 }
+
 .started-form-submit span:after {
   height: 2px;
   width: 0%;
 }
+
 .started-form-submit span:hover:before {
   height: 100%;
 }
+
 .started-form-submit span:hover:after {
   width: 100%;
 }
 
 /* FOOTER */
-
-.footer {
-}
-
-.container {
-}
 
 .container-footer {
   background-color: var(--level1);
@@ -783,4 +719,30 @@ body {
 .footer-copyration {
   color: var(--light-grey);
   line-height: 1.5;
+}
+
+/* -- ADAPTIVE -- */
+
+@media screen and (min-width: 360px) {
+  .skillset-list-icon-item {
+    width: 180px;
+    height: 140px;
+  }
+
+  .about-item-box {
+    padding: 32px;
+  }
+
+  .photography-btn-box {
+    gap: 24px 24px;
+  }
+
+  .photography-btn {
+    width: 148px;
+  }
+
+  .started-form-submit {
+    width: 320px;
+    height: 75px;
+  }
 }
