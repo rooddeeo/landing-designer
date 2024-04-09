@@ -62,6 +62,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   margin: 0 auto;
+  /* outline: 1px solid red; */
 }
 
 .header-container {
@@ -82,17 +83,24 @@ body {
   border: none;
 }
 
-/* -- HERO -- */
-
-.hero-photo {
-  max-width: 360px;
-  margin: 0 auto;
-  margin-bottom: 48px;
+.header-menu-list {
+  display: none;
 }
 
+/* -- HERO -- */
+
 .hero-container {
+  position: relative;
+  padding-top: 336px;
   padding-bottom: 48px;
   border-bottom: 1px dashed var(--light-grey);
+}
+
+.hero-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .hero-title {
@@ -115,6 +123,7 @@ body {
 /* -- WORK EXPERIENCE -- */
 
 .experience-container {
+  padding-top: 48px;
   padding-bottom: 48px;
 }
 
@@ -124,7 +133,6 @@ body {
   line-height: 1.5;
   text-transform: uppercase;
   color: var(--light-grey);
-  margin-top: 48px;
   margin-bottom: 8px;
 }
 
@@ -173,8 +181,9 @@ body {
 /* -- PHILOSOPHY & VALUES -- */
 
 .philosophy-container {
+  position: relative;
   padding-top: 48px;
-  padding-bottom: 51px;
+  padding-bottom: 450px;
   background-color: var(--text);
 }
 
@@ -199,17 +208,18 @@ body {
 }
 
 .philosophy-img {
-  max-width: 360px;
-  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
 }
 
 /* -- SKILLSET -- */
 
 .skillset-container {
+  position: relative;
   padding-top: 64px;
-  padding-bottom: 64px;
-  padding-left: 0;
-  padding-right: 0;
+  padding-bottom: 424px;
 }
 
 .skillset-title {
@@ -230,6 +240,14 @@ body {
   fill: transparent;
 }
 
+.skillset-list-item {
+  margin-bottom: 48px;
+}
+
+.skillset-list-item:last-child {
+  margin-bottom: 0;
+}
+
 .skillset-item-icon {
   fill: var(--primary);
   margin-bottom: 24px;
@@ -246,7 +264,6 @@ body {
 .skillset-item-paragraph {
   color: var(--light-grey);
   line-height: 1.5;
-  margin-bottom: 48px;
 }
 
 .skillset:last-child {
@@ -254,9 +271,13 @@ body {
 }
 
 .skillset-list-icon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 
 .skillset-list-icon-item {
@@ -264,8 +285,8 @@ body {
   justify-content: center;
   align-items: center;
   fill: var(--light-grey);
-  width: 160px;
-  height: 120px;
+  width: calc(100% / 2);
+  height: 140px;
 }
 
 .skillset-list-icon-item:nth-child(even) {
@@ -284,12 +305,9 @@ body {
   border-bottom: 1px solid var(--level1);
 }
 
-.skillset-list-icon-svg {
-}
-
 /* -- MY PROJECTS -- */
 
-.container-projects {
+.projects-container {
   padding-top: 64px;
   padding-bottom: 70px;
 }
@@ -322,10 +340,6 @@ body {
   margin-bottom: 0;
 }
 
-.projects-item-image {
-  max-width: 360px;
-}
-
 .projects-item-box {
   padding: 40px 32px;
 }
@@ -346,10 +360,18 @@ body {
 
 /* -- SOCIAL INFO -- */
 
-.container-social-bg-white {
-  background-color: var(--text);
+.social-container {
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.social-box-instagram {
   padding-top: 48px;
-  padding-bottom: 51px;
+  padding-bottom: 498px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: var(--text);
+  position: relative;
 }
 
 .social-instagram-title {
@@ -373,13 +395,17 @@ body {
 }
 
 .social-instagram-img {
-  max-width: 360px;
-  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
-.container-social-bg-dark {
+.social-box-dribbble {
   padding-top: 64px;
-  padding-bottom: 112px;
+  padding-bottom: 64px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .social-box-dribbble-title {
@@ -408,8 +434,9 @@ body {
 
 /* -- ABOUT ME -- */
 
-.container-about {
-  padding-bottom: 96px;
+.about-container {
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .about-subtitle {
@@ -473,8 +500,9 @@ body {
 
 /* -- PHOTOGRAPHY -- */
 
-.container-photography {
-  padding-bottom: 96px;
+.photography-container {
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .photography-title {
@@ -500,7 +528,6 @@ body {
 }
 
 .photography-btn {
-  width: 200px;
   color: var(--text);
   font-size: 18px;
   font-weight: 700;
@@ -516,8 +543,15 @@ body {
   background-color: var(--primary);
 }
 
-.photography-img {
-  margin-bottom: 24px;
+.photography-gallery-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.photography-list-item {
+  width: calc(100% - 24px) / 4;
 }
 
 .last-img {
@@ -526,7 +560,8 @@ body {
 
 /* -- LET`S GET STARTED -- */
 
-.container-started {
+.started-container {
+  padding-top: 48px;
   padding-bottom: 48px;
 }
 
@@ -669,7 +704,7 @@ body {
 
 /* FOOTER */
 
-.container-footer {
+.footer-container {
   background-color: var(--level1);
   padding-top: 48px;
   padding-bottom: 48px;
@@ -724,9 +759,12 @@ body {
 /* -- ADAPTIVE -- */
 
 @media screen and (min-width: 360px) {
-  .skillset-list-icon-item {
-    width: 180px;
-    height: 140px;
+  .philosophy-container {
+    padding-bottom: 498px;
+  }
+
+  .skillset-container {
+    padding-bottom: 484px;
   }
 
   .about-item-box {
@@ -737,12 +775,267 @@ body {
     gap: 24px 24px;
   }
 
-  .photography-btn {
-    width: 148px;
-  }
-
   .started-form-submit {
     width: 320px;
     height: 75px;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .photography-btn {
+    width: 148px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .header-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .header-mob-btn {
+    display: none;
+  }
+
+  .header-menu-list {
+    display: flex;
+    gap: 48px;
+  }
+
+  .header-menu-link {
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  .header-menu-item:last-child > .header-menu-link {
+    background: var(--primary);
+    padding: 32px 24px;
+  }
+
+  .hero-photo {
+    max-width: 384px;
+    top: 45px;
+  }
+
+  .hero-container {
+    padding-top: 812px;
+    position: relative;
+  }
+
+  .hero-title-box {
+    position: absolute;
+    top: 168px;
+    left: 320px;
+    max-width: 408px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    margin-bottom: 32px;
+  }
+
+  .experience-container {
+    padding-bottom: 80px;
+  }
+
+  .experience-paragraph {
+    font-size: 55px;
+  }
+
+  .experience-list {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .experience-list-item {
+    width: calc((100% - 50px) / 3);
+    padding-right: 19px;
+  }
+
+  .philosophy-container {
+    padding-top: 80px;
+    padding-bottom: 90px;
+    padding-right: 424px;
+  }
+
+  .philosophy-title {
+    font-size: 55px;
+  }
+
+  .philosophy-paragraph {
+    margin-bottom: 67px;
+  }
+
+  .philosophy-img {
+    top: 0;
+    width: 384px;
+  }
+
+  .skillset-container {
+    padding-top: 80px;
+  }
+
+  .skillset-title {
+    font-size: 55px;
+  }
+
+  .skillset-paragraph {
+    margin-bottom: 48px;
+  }
+
+  .skillset-list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .skillset-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .skillset-list-item:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+
+  .skillset-item-paragraph {
+    max-width: 284px;
+  }
+
+  .projects-subtitle {
+    font-size: 55px;
+  }
+
+  .social-container {
+    max-width: 768px;
+  }
+
+  .social-box-instagram {
+    padding-top: 80px;
+    padding-bottom: 94px;
+    padding-left: 40px;
+    padding-right: 424px;
+  }
+
+  .social-instagram-title {
+    font-size: 55px;
+    margin-bottom: 24px;
+  }
+
+  .social-instagram-img {
+    top: 0;
+    width: 384px;
+  }
+
+  .social-box-dribbble {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .social-box-dribbble-img {
+    margin-top: 120px;
+  }
+
+  .about-container {
+    display: flex;
+    gap: 23px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .about-title-box {
+    width: 333px;
+  }
+
+  .about-subtitle {
+    font-size: 55px;
+    margin-bottom: 24px;
+  }
+
+  .about-list {
+    margin-top: 0;
+  }
+
+  .about-list-item {
+    margin-bottom: 64px;
+  }
+
+  .photography-container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .photography-title {
+    font-size: 55px;
+    margin-bottom: 24px;
+  }
+
+  .photography-paragraph {
+    margin-bottom: 64px;
+  }
+
+  .photography-btn-box {
+    justify-content: start;
+  }
+
+  .photography-btn {
+    max-width: 148px;
+  }
+
+  .started-container {
+    display: flex;
+    gap: 24px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .started-title-box {
+    width: 332px;
+  }
+
+  .started-title {
+    font-size: 55px;
+    margin-bottom: 24px;
+  }
+
+  .footer-container {
+    padding-top: 80px;
+    padding-bottom: 56px;
+  }
+
+  .footer-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 46px;
+  }
+
+  .footer-navigation {
+    width: 330px;
+    margin-bottom: 0;
+  }
+
+  .footer-navigation-menu-list {
+    gap: 30px 60px;
+    flex-wrap: wrap;
+    max-height: 200px;
+  }
+
+  .footer-social {
+    margin-bottom: 0;
+  }
+
+  .footer-copyration {
+    width: 329px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
 }

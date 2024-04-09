@@ -34,17 +34,25 @@
               height="24"
             />
           </a>
-          <button class="header-mob-btn">
+          <button type="button" class="header-mob-btn">
             <svg class="header-btn-icon" width="24" height="24">
               <use href="./images/symbol-defs.svg#icon-mob-menu"></use>
             </svg>
           </button>
-          <!-- <ul class="heade-menu-list">
-						<li class="header-menu-item"><a class="header-menu-link" href=""></a></li>
-						<li class="header-menu-item"><a class="header-menu-link" href=""></a></li>
-						<li class="header-menu-item"><a class="header-menu-link" href=""></a></li>
-						<li class="header-menu-item"><a class="header-menu-link" href=""></a></li>
-					</ul> -->
+          <ul class="header-menu-list">
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="#">Experience</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="#">Work</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="#">Photography</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="header-menu-link" href="#">Contact</a>
+            </li>
+          </ul>
         </nav>
       </div>
     </header>
@@ -54,46 +62,50 @@
     <main>
       <!-- SECTION HERO -->
       <section class="hero">
-        <picture class="hero-photo">
-          <source
-            media="(min-width: 1440px) and (min-resolution: 2dppx)"
-            srcset="./images/desktop-hero-photo-2x.jpg 2x"
-          />
-          <source
-            media="(min-width: 1440px)"
-            srcset="./images/desktop-hero-photo.jpg"
-          />
-          <source
-            media="(min-width: 768px) and (min-resolution: 2dppx)"
-            srcset="./images/tablet-hero-photo-2x.jpg 2x"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="./images/tablet-hero-photo.jpg"
-          />
-          <source
-            media="(min-width: 360px) and (min-resolution: 2dppx)"
-            srcset="./images/mobile-hero-photo-2x.jpg 2x"
-          />
-          <source
-            media="(min-width: 360px)"
-            srcset="./images/mobile-hero-photo.jpg"
-          />
-          <img
-            class="hero-photo"
-            src="./images/mobile-hero-photo.jpg"
-            alt="My photo"
-          />
-        </picture>
         <div class="container hero-container">
-          <h1 class="hero-title">
-            I`m Robin Williams. A Product Designer <span>based in Italy.</span>
-          </h1>
-          <p class="hero-paragraph">
-            I’m probably the most passionate designer you will ever get to work
-            with. If you have a great project that needs some amazing skills,
-            I’m your guy.
-          </p>
+          <picture class="hero-photo">
+            <source
+              media="(min-width: 1440px) and (min-resolution: 2dppx)"
+              srcset="./images/desktop-hero-photo-2x.jpg 2x"
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="./images/desktop-hero-photo.jpg"
+            />
+            <source
+              media="(min-width: 768px) and (min-resolution: 2dppx)"
+              srcset="./images/tablet-hero-photo-2x.jpg 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/tablet-hero-photo.jpg"
+            />
+            <source
+              media="(min-width: 360px) and (min-resolution: 2dppx)"
+              srcset="./images/mobile-hero-photo-2x.jpg 2x"
+            />
+            <source
+              media="(min-width: 360px)"
+              srcset="./images/mobile-hero-photo.jpg"
+            />
+            <img
+              class="hero-photo"
+              src="./images/mobile-hero-photo.jpg"
+              alt="My photo"
+            />
+          </picture>
+          <div class="hero-title-box">
+            <h1 class="hero-title">
+              I`m Robin Williams. <br />
+              A Product Designer
+              <span>based in Italy.</span>
+            </h1>
+            <p class="hero-paragraph">
+              I’m probably the most passionate designer you will ever get to
+              work with. If you have a great project that needs some amazing
+              skills, I’m your guy.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -142,109 +154,106 @@
       <!-- SECTION PHILOSOPHY & VALUES -->
       <section class="philosophy">
         <div class="container philosophy-container">
-          <h2 class="philosophy-title">Philosophy & values</h2>
-          <p class="philosophy-paragraph">
-            I think everyone wants the same thing - relationship with humanity,
-            peace with the metaphysical, and experience with the universe. I try
-            to grasp these things with my values: authenticity, creativity, &
-            hospitality.
-          </p>
+          <div class="philosophy-title-box">
+            <h2 class="philosophy-title">Philosophy & values</h2>
+            <p class="philosophy-paragraph">
+              I think everyone wants the same thing - relationship with
+              humanity, peace with the metaphysical, and experience with the
+              universe. I try to grasp these things with my values:
+              authenticity, creativity, & hospitality.
+            </p>
+          </div>
           <a class="philosophy-about hover-effect" href="#">More about me</a>
+          <picture class="philosophy-img">
+            <source
+              media="(min-width: 1440px) and (min-resolution: 2dppx)"
+              srcset="./images/desktop-philosophy-instagram-2x.jpg 2x"
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="./images/desktop-philosophy-instagram.jpg"
+            />
+            <source
+              media="(min-width: 768px) and (min-resolution: 2dppx)"
+              srcset="./images/tablet-philosophy-instagram-2x.jpg 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="./images/tablet-philosophy-instagram.jpg"
+            />
+            <source
+              media="(min-width: 360px) and (min-resolution: 2dppx)"
+              srcset="./images/mobile-philosophy-instagram-2x.jpg 2x"
+            />
+            <source
+              media="(min-width: 360px)"
+              srcset="./images/mobile-philosophy-instagram.jpg"
+            />
+            <img
+              class="philosophy-img"
+              src="./images/mobile-philosophy-instagram.jpg"
+              alt="My philosophy"
+            />
+          </picture>
         </div>
-        <picture class="philosophy-img">
-          <source
-            media="(min-width: 1440px) and (min-resolution: 2dppx)"
-            srcset="./images/desktop-philosophy-instagram-2x.jpg 2x"
-          />
-          <source
-            media="(min-width: 1440px)"
-            srcset="./images/desktop-philosophy-instagram.jpg"
-          />
-          <source
-            media="(min-width: 768px) and (min-resolution: 2dppx)"
-            srcset="./images/tablet-philosophy-instagram-2x.jpg 2x"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="./images/tablet-philosophy-instagram.jpg"
-          />
-          <source
-            media="(min-width: 360px) and (min-resolution: 2dppx)"
-            srcset="./images/mobile-philosophy-instagram-2x.jpg 2x"
-          />
-          <source
-            media="(min-width: 360px)"
-            srcset="./images/mobile-philosophy-instagram.jpg"
-          />
-          <img
-            class="philosophy-img"
-            src="./images/mobile-philosophy-instagram.jpg"
-            alt="My philosophy"
-          />
-        </picture>
       </section>
 
       <!-- SECTION SKILLSET -->
       <section class="skillset">
         <div class="container skillset-container">
-          <div class="container">
-            <h2 class="skillset-title">Skillset</h2>
-            <p class="skillset-paragraph">
-              With skills in over 4 different fields of design, I am the perfect
-              person to hire when it comes to a full fledged project. Whatever
-              your needs are, I can pretty much take on any challenge.
-            </p>
-            <ul class="skillset-list">
-              <li class="skillset-list-item">
-                <svg class="skillset-item-icon" width="25" height="32">
-                  <use
-                    href="./images/symbol-defs.svg#icon-product-design"
-                  ></use>
-                </svg>
-                <h3 class="skillset-item-title">Product Design</h3>
-                <p class="skillset-item-paragraph">
-                  Working at Facebook has taught me a lot about how to
-                  understand users, solve problems and build great products.
-                </p>
-              </li>
-              <li class="skillset-list-item">
-                <svg class="skillset-item-icon" width="32" height="32">
-                  <use href="./images/symbol-defs.svg#icon-visual-design"></use>
-                </svg>
-                <h3 class="skillset-item-title">Visual Design</h3>
-                <p class="skillset-item-paragraph">
-                  My experience at dribbble has helped me learn to develop the
-                  eye for design. Colors, typography, layout and the whole
-                  package.
-                </p>
-              </li>
-              <li class="skillset-list-item">
-                <svg class="skillset-item-icon" width="25" height="32">
-                  <use
-                    class="bg-none"
-                    href="./images/symbol-defs.svg#icon-motion-design"
-                  ></use>
-                </svg>
-                <h3 class="skillset-item-title">Motion Design</h3>
-                <p class="skillset-item-paragraph">
-                  I started my design journey with motion design in my college
-                  days. Motion is something that really fascinates me because of
-                  the flexibility of story telling.
-                </p>
-              </li>
-              <li class="skillset-list-item">
-                <svg class="skillset-item-icon" width="32" height="32">
-                  <use href="./images/symbol-defs.svg#icon-photography"></use>
-                </svg>
-                <h3 class="skillset-item-title">Photography</h3>
-                <p class="skillset-item-paragraph">
-                  Clicking pictures really brings out the creative in me.
-                  Phtography really makes you look and percieve things in a
-                  different way.
-                </p>
-              </li>
-            </ul>
-          </div>
+          <h2 class="skillset-title">Skillset</h2>
+          <p class="skillset-paragraph">
+            With skills in over 4 different fields of design, I am the perfect
+            person to hire when it comes to a full fledged project. Whatever
+            your needs are, I can pretty much take on any challenge.
+          </p>
+          <ul class="skillset-list">
+            <li class="skillset-list-item">
+              <svg class="skillset-item-icon" width="25" height="32">
+                <use href="./images/symbol-defs.svg#icon-product-design"></use>
+              </svg>
+              <h3 class="skillset-item-title">Product Design</h3>
+              <p class="skillset-item-paragraph">
+                Working at Facebook has taught me a lot about how to understand
+                users, solve problems and build great products.
+              </p>
+            </li>
+            <li class="skillset-list-item">
+              <svg class="skillset-item-icon" width="32" height="32">
+                <use href="./images/symbol-defs.svg#icon-visual-design"></use>
+              </svg>
+              <h3 class="skillset-item-title">Visual Design</h3>
+              <p class="skillset-item-paragraph">
+                My experience at dribbble has helped me learn to develop the eye
+                for design. Colors, typography, layout and the whole package.
+              </p>
+            </li>
+            <li class="skillset-list-item">
+              <svg class="skillset-item-icon" width="25" height="32">
+                <use
+                  class="bg-none"
+                  href="./images/symbol-defs.svg#icon-motion-design"
+                ></use>
+              </svg>
+              <h3 class="skillset-item-title">Motion Design</h3>
+              <p class="skillset-item-paragraph">
+                I started my design journey with motion design in my college
+                days. Motion is something that really fascinates me because of
+                the flexibility of story telling.
+              </p>
+            </li>
+            <li class="skillset-list-item">
+              <svg class="skillset-item-icon" width="32" height="32">
+                <use href="./images/symbol-defs.svg#icon-photography"></use>
+              </svg>
+              <h3 class="skillset-item-title">Photography</h3>
+              <p class="skillset-item-paragraph">
+                Clicking pictures really brings out the creative in me.
+                Phtography really makes you look and percieve things in a
+                different way.
+              </p>
+            </li>
+          </ul>
           <ul class="skillset-list-icon">
             <li class="skillset-list-icon-item">
               <svg class="skillset-list-icon-svg" width="85" height="21">
@@ -282,7 +291,7 @@
 
       <!-- SECTION MY PROJECTS -->
       <section class="projects">
-        <div class="container container-projects">
+        <div class="container projects-container">
           <h2 class="projects-title">My projects</h2>
           <h3 class="projects-subtitle">
             Work that I’ve done for the past 8 years
@@ -458,58 +467,56 @@
 
       <!-- SECTION SOCIAL INFO -->
       <section class="social">
-        <h2 class="social-title" hidden></h2>
-        <div class="container container-social-bg-white">
+        <div class="social-container">
+          <h2 class="social-title" hidden></h2>
           <ul class="social-box">
             <li class="social-box-instagram">
-              <h2 class="social-instagram-title">Instagram</h2>
-              <p class="social-instagram-paragraph">
-                If you area a person who enjoys photography, then I highly
-                recommend that you check out my Instagram. I’m an avid traveller
-                and I capture the best moments that I would love to cherish with
-                the world
-              </p>
-              <a class="social-instagram-link hover-effect" href="#"
-                >Follow me on IG</a
-              >
+              <div class="social-instagram-text">
+                <h3 class="social-instagram-title">Instagram</h3>
+                <p class="social-instagram-paragraph">
+                  If you area a person who enjoys photography, then I highly
+                  recommend that you check out my Instagram. I’m an avid
+                  traveller and I capture the best moments that I would love to
+                  cherish with the world
+                </p>
+                <a class="social-instagram-link hover-effect" href="#"
+                  >Follow me on IG</a
+                >
+              </div>
+              <picture class="social-instagram-img">
+                <source
+                  media="(min-width: 1440px) and (min-resolution: 2dppx)"
+                  srcset="./images/desktop-instagram-photo-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="./images/desktop-instagram-photo.jpg"
+                />
+                <source
+                  media="(min-width: 768px) and (min-resolution: 2dppx)"
+                  srcset="./images/tablet-instagram-photo-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/tablet-instagram-photo.jpg"
+                />
+                <source
+                  media="(min-width: 360px) and (min-resolution: 2dppx)"
+                  srcset="./images/mobile-philosophy-instagram-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 360px)"
+                  src="./images/mobile-philosophy-instagram.jpg"
+                />
+                <img
+                  class="social-instagram-img"
+                  src="./images/mobile-philosophy-instagram.jpg"
+                  alt="My social"
+                />
+              </picture>
             </li>
-          </ul>
-        </div>
-        <picture class="social-instagram-img">
-          <source
-            media="(min-width: 1440px) and (min-resolution: 2dppx)"
-            srcset="./images/desktop-philosophy-instagram-2x.jpg 2x"
-          />
-          <source
-            media="(min-width: 1440px)"
-            srcset="./images/desktop-philosophy-instagram.jpg"
-          />
-          <source
-            media="(min-width: 768px) and (min-resolution: 2dppx)"
-            srcset="./images/tablet-philosophy-instagram-2x.jpg 2x"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="./images/tablet-philosophy-instagram.jpg"
-          />
-          <source
-            media="(min-width: 360px) and (min-resolution: 2dppx)"
-            srcset="./images/mobile-philosophy-instagram-2x.jpg 2x"
-          />
-          <source
-            media="(min-width: 360px)"
-            srcset="./images/mobile-philosophy-instagram.jpg"
-          />
-          <img
-            class="social-instagram-img"
-            src="./images/mobile-philosophy-instagram.jpg"
-            alt="My social"
-          />
-        </picture>
-        <div class="container container-social-bg-dark">
-          <ul class="social-box">
             <li class="social-box-dribbble">
-              <h2 class="social-box-dribbble-title">Dribbble</h2>
+              <h3 class="social-box-dribbble-title">Dribbble</h3>
               <p class="social-box-dribbble-paragraph">
                 Each dribbble shot is made with love and care. Do check out my
                 work on Dribbble. Likes and comments are appreciated.
@@ -555,14 +562,16 @@
 
       <!-- ABOUT ME -->
       <section class="about">
-        <h2 class="about-title" hidden></h2>
-        <div class="container container-about">
-          <h3 class="about-subtitle">This is what people say about me</h3>
-          <p class="about-paragraph">
-            Here are a few lines from people who I have worked with over the
-            past 8+ years in my design career.
-          </p>
-          <a class="about-link hover-effect" href="#">See all testimonials</a>
+        <div class="container about-container">
+          <div class="about-title-box">
+            <h2 class="about-title" hidden></h2>
+            <h3 class="about-subtitle">This is what people say about me</h3>
+            <p class="about-paragraph">
+              Here are a few lines from people who I have worked with over the
+              past 8+ years in my design career.
+            </p>
+            <a class="about-link hover-effect" href="#">See all testimonials</a>
+          </div>
           <ul class="about-list">
             <li class="about-list-item">
               <picture class="about-item-img">
@@ -695,153 +704,165 @@
 
       <!-- PHOTOGRAPHY -->
       <section class="photography">
-        <div class="container container-photography">
+        <div class="container photography-container">
           <h2 class="photography-title">Photography</h2>
           <p class="photography-paragraph">
             Here is a collection of my best travel pictures that I took while
             travelling places all around the world.
           </p>
           <div class="photography-btn-box">
-            <button class="photography-btn">Italy</button>
-            <button class="photography-btn">Australia</button>
-            <button class="photography-btn">India</button>
-            <button class="photography-btn">Brazil</button>
+            <button type="button" class="photography-btn">Italy</button>
+            <button type="button" class="photography-btn">Australia</button>
+            <button type="button" class="photography-btn">India</button>
+            <button type="button" class="photography-btn">Brazil</button>
           </div>
-          <picture class="photography-img">
-            <source
-              media="(min-width: 1440px) and (min-resolution: 2dppx)"
-              srcset="./images/desktop-photography-2x.jpg 2x"
-            />
-            <source
-              media="(min-width: 1440px)"
-              srcset="./images/desktop-photography.jpg"
-            />
-            <source
-              media="(min-width: 768px) and (min-resolution: 2dppx)"
-              srcset="./images/tablet-photography-2x.jpg 2x"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="./images/tablet-photography.jpg"
-            />
-            <source
-              media="(min-width: 360px) and (min-resolution: 2dppx)"
-              srcset="./images/mobile-photography-2x.jpg 2x"
-            />
-            <source
-              media="(min-width: 360px)"
-              srcset="./images/mobile-photography.jpg"
-            />
-            <img
-              class="photography-img"
-              src="./images/mobile-photography.jpg"
-              alt="Photography"
-            />
-          </picture>
-          <picture class="photography-img">
-            <source
-              media="(min-width: 1440px) and (min-resolution: 2dppx)"
-              srcset="./images/desktop-photography2-2x.jpg 2x"
-            />
-            <source
-              media="(min-width: 1440px)"
-              srcset="./images/desktop-photography2.jpg"
-            />
-            <source
-              media="(min-width: 768px) and (min-resolution: 2dppx)"
-              srcset="./images/tablet-photography2-2x.jpg 2x"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="./images/tablet-photography2.jpg"
-            />
-            <source
-              media="(min-width: 360px) and (min-resolution: 2dppx)"
-              srcset="./images/mobile-photography2-2x.jpg 2x"
-            />
-            <source
-              media="(min-width: 360px)"
-              srcset="./images/mobile-photography2.jpg"
-            />
-            <img
-              class="photography-img"
-              src="./images/mobile-photography2.jpg"
-              alt="Photography"
-            />
-          </picture>
-          <picture class="photography-img">
-            <source
-              media="(min-width: 1440px) and (min-resolution: 2dppx)"
-              srcset="./images/desktop-photography3-2x.jpg 2x"
-            />
-            <source
-              media="(min-width: 1440px)"
-              srcset="./images/desktop-photography3.jpg"
-            />
-            <source
-              media="(min-width: 768px) and (min-resolution: 2dppx)"
-              srcset="./images/tablet-photography3-2x.jpg 2x"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="./images/tablet-photography3.jpg"
-            />
-            <source
-              media="(min-width: 360px) and (min-resolution: 2dppx)"
-              srcset="./images/mobile-photography3-2x.jpg 2x"
-            />
-            <source
-              media="(min-width: 360px)"
-              srcset="./images/mobile-photography3.jpg"
-            />
-            <img
-              class="photography-img"
-              src="./images/mobile-photography3.jpg"
-              alt="Photography"
-            />
-          </picture>
-          <picture class="photography-img">
-            <source
-              media="(min-width: 1440px) and (min-resolution: 2dppx)"
-              srcset="./images/desktop-photography4-2x.jpg 2x"
-            />
-            <source
-              media="(min-width: 1440px)"
-              srcset="./images/desktop-photography4.jpg"
-            />
-            <source
-              media="(min-width: 768px) and (min-resolution: 2dppx)"
-              srcset="./images/tablet-photography4-2x.jpg 2x"
-            />
-            <source
-              media="(min-width: 768px)"
-              srcset="./images/tablet-photography4.jpg"
-            />
-            <source
-              media="(min-width: 360px) and (min-resolution: 2dppx)"
-              srcset="./images/mobile-photography4-2x.jpg 2x"
-            />
-            <source
-              media="(min-width: 360px)"
-              srcset="./images/mobile-photography4.jpg"
-            />
-            <img
-              class="photography-img last-img"
-              src="./images/mobile-photography4.jpg"
-              alt="Photography"
-            />
-          </picture>
+          <ul class="photography-gallery-list">
+            <li class="photography-list-item">
+              <picture class="photography-gallery-img">
+                <source
+                  media="(min-width: 1440px) and (min-resolution: 2dppx)"
+                  srcset="./images/desktop-photography-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="./images/desktop-photography.jpg"
+                />
+                <source
+                  media="(min-width: 768px) and (min-resolution: 2dppx)"
+                  srcset="./images/tablet-photography-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/tablet-photography.jpg"
+                />
+                <source
+                  media="(min-width: 360px) and (min-resolution: 2dppx)"
+                  srcset="./images/mobile-photography-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 360px)"
+                  srcset="./images/mobile-photography.jpg"
+                />
+                <img
+                  class="photography-gallery-img"
+                  src="./images/mobile-photography.jpg"
+                  alt="Photography"
+                />
+              </picture>
+            </li>
+            <li class="photography-list-item">
+              <picture class="photography-gallery-img">
+                <source
+                  media="(min-width: 1440px) and (min-resolution: 2dppx)"
+                  srcset="./images/desktop-photography2-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="./images/desktop-photography2.jpg"
+                />
+                <source
+                  media="(min-width: 768px) and (min-resolution: 2dppx)"
+                  srcset="./images/tablet-photography2-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/tablet-photography2.jpg"
+                />
+                <source
+                  media="(min-width: 360px) and (min-resolution: 2dppx)"
+                  srcset="./images/mobile-photography2-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 360px)"
+                  srcset="./images/mobile-photography2.jpg"
+                />
+                <img
+                  class="photography-gallery-img"
+                  src="./images/mobile-photography2.jpg"
+                  alt="Photography"
+                />
+              </picture>
+            </li>
+            <li class="photography-list-item">
+              <picture class="photography-gallery-img">
+                <source
+                  media="(min-width: 1440px) and (min-resolution: 2dppx)"
+                  srcset="./images/desktop-photography3-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="./images/desktop-photography3.jpg"
+                />
+                <source
+                  media="(min-width: 768px) and (min-resolution: 2dppx)"
+                  srcset="./images/tablet-photography3-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/tablet-photography3.jpg"
+                />
+                <source
+                  media="(min-width: 360px) and (min-resolution: 2dppx)"
+                  srcset="./images/mobile-photography3-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 360px)"
+                  srcset="./images/mobile-photography3.jpg"
+                />
+                <img
+                  class="photography-gallery-img"
+                  src="./images/mobile-photography3.jpg"
+                  alt="Photography"
+                />
+              </picture>
+            </li>
+            <li class="photography-list-item">
+              <picture class="photography-gallery-img">
+                <source
+                  media="(min-width: 1440px) and (min-resolution: 2dppx)"
+                  srcset="./images/desktop-photography4-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="./images/desktop-photography4.jpg"
+                />
+                <source
+                  media="(min-width: 768px) and (min-resolution: 2dppx)"
+                  srcset="./images/tablet-photography4-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/tablet-photography4.jpg"
+                />
+                <source
+                  media="(min-width: 360px) and (min-resolution: 2dppx)"
+                  srcset="./images/mobile-photography4-2x.jpg 2x"
+                />
+                <source
+                  media="(min-width: 360px)"
+                  srcset="./images/mobile-photography4.jpg"
+                />
+                <img
+                  class="photography-gallery-img last-img"
+                  src="./images/mobile-photography4.jpg"
+                  alt="Photography"
+                />
+              </picture>
+            </li>
+          </ul>
         </div>
       </section>
 
       <!-- LET`S GET STARTED -->
       <section class="started">
-        <div class="container container-started">
-          <h2 class="started-title">Let’s get started</h2>
-          <p class="started-paragraph">
-            Now that you know a lot about me, let me know if you are interested
-            to work with me.
-          </p>
+        <div class="container started-container">
+          <div class="started-title-box">
+            <h2 class="started-title">Let’s get started</h2>
+            <p class="started-paragraph">
+              Now that you know a lot about me, let me know if you are
+              interested to work with me.
+            </p>
+          </div>
           <form class="started-form">
             <div class="started-form-box">
               <label class="started-form-box-label">Name</label>
@@ -855,7 +876,7 @@
                 name="Message"
               ></textarea>
             </div>
-            <button class="started-form-submit">
+            <button type="button" class="started-form-submit">
               <span>Let’s get started</span>
             </button>
           </form>
@@ -864,86 +885,102 @@
 
       <!-- FOOTER -->
       <section class="footer">
-        <div class="container container-footer">
-          <a class="footer-logo" href="./index.html">
-            <img
-              class="footer-logo-svg"
-              src="./images/footer-logo.svg"
-              alt="Footer logo"
-              width="130"
-              height="40"
-            />
-          </a>
-          <div class="footer-social">
-            <ul class="footer-social-list">
-              <li class="footer-social-list-item">
-                <a class="footer-social-item-link" href="#">
-                  <svg class="footer-social-link-icon" width="24" height="24">
-                    <use
-                      class="footer-social-icon-twitter"
-                      href="./images/symbol-defs.svg#icon-twitter"
-                    ></use></svg
-                ></a>
-              </li>
-              <li class="footer-social-list-item">
-                <a class="footer-social-item-link" href="#">
-                  <svg class="footer-social-link-icon" width="24" height="24">
-                    <use
-                      class="footer-social-icon-dribbble"
-                      href="./images/symbol-defs.svg#icon-dribbble"
-                    ></use></svg
-                ></a>
-              </li>
-              <li class="footer-social-list-item">
-                <a class="footer-social-item-link" href="#">
-                  <svg class="footer-social-link-icon" width="24" height="24">
-                    <use
-                      class="footer-social-icon-linkedIn"
-                      href="./images/symbol-defs.svg#icon-linkedIn"
-                    ></use></svg
-                ></a>
-              </li>
-            </ul>
+        <div class="container footer-container">
+          <div class="footer-box">
+            <div class="footer-logo-social-box">
+              <a class="footer-logo" href="./index.html">
+                <img
+                  class="footer-logo-svg"
+                  src="./images/footer-logo.svg"
+                  alt="Footer logo"
+                  width="130"
+                  height="40"
+                />
+              </a>
+              <div class="footer-social">
+                <ul class="footer-social-list">
+                  <li class="footer-social-list-item">
+                    <a class="footer-social-item-link" href="#">
+                      <svg
+                        class="footer-social-link-icon"
+                        width="24"
+                        height="24"
+                      >
+                        <use
+                          class="footer-social-icon-twitter"
+                          href="./images/symbol-defs.svg#icon-twitter"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="footer-social-list-item">
+                    <a class="footer-social-item-link" href="#">
+                      <svg
+                        class="footer-social-link-icon"
+                        width="24"
+                        height="24"
+                      >
+                        <use
+                          class="footer-social-icon-dribbble"
+                          href="./images/symbol-defs.svg#icon-dribbble"
+                        ></use></svg
+                    ></a>
+                  </li>
+                  <li class="footer-social-list-item">
+                    <a class="footer-social-item-link" href="#">
+                      <svg
+                        class="footer-social-link-icon"
+                        width="24"
+                        height="24"
+                      >
+                        <use
+                          class="footer-social-icon-linkedIn"
+                          href="./images/symbol-defs.svg#icon-linkedIn"
+                        ></use></svg
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <nav class="footer-navigation">
+              <ul class="footer-navigation-menu-list">
+                <li class="footer-navigation-menu-item">
+                  <a class="footer-navigation-menu-link hover-effect" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="footer-navigation-menu-item">
+                  <a class="footer-navigation-menu-link hover-effect" href="#"
+                    >About</a
+                  >
+                </li>
+                <li class="footer-navigation-menu-item">
+                  <a class="footer-navigation-menu-link hover-effect" href="#"
+                    >Work</a
+                  >
+                </li>
+                <li class="footer-navigation-menu-item">
+                  <a class="footer-navigation-menu-link hover-effect" href="#"
+                    >Process</a
+                  >
+                </li>
+                <li class="footer-navigation-menu-item">
+                  <a class="footer-navigation-menu-link hover-effect" href="#"
+                    >Store</a
+                  >
+                </li>
+                <li class="footer-navigation-menu-item">
+                  <a class="footer-navigation-menu-link hover-effect" href="#"
+                    >Blog</a
+                  >
+                </li>
+                <li class="footer-navigation-menu-item">
+                  <a class="footer-navigation-menu-link hover-effect" href="#"
+                    >Reading List</a
+                  >
+                </li>
+              </ul>
+            </nav>
           </div>
-          <nav class="footer-navigation">
-            <ul class="footer-navigation-menu-list">
-              <li class="footer-navigation-menu-item">
-                <a class="footer-navigation-menu-link hover-effect" href="#"
-                  >Home</a
-                >
-              </li>
-              <li class="footer-navigation-menu-item">
-                <a class="footer-navigation-menu-link hover-effect" href="#"
-                  >About</a
-                >
-              </li>
-              <li class="footer-navigation-menu-item">
-                <a class="footer-navigation-menu-link hover-effect" href="#"
-                  >Work</a
-                >
-              </li>
-              <li class="footer-navigation-menu-item">
-                <a class="footer-navigation-menu-link hover-effect" href="#"
-                  >Process</a
-                >
-              </li>
-              <li class="footer-navigation-menu-item">
-                <a class="footer-navigation-menu-link hover-effect" href="#"
-                  >Store</a
-                >
-              </li>
-              <li class="footer-navigation-menu-item">
-                <a class="footer-navigation-menu-link hover-effect" href="#"
-                  >Blog</a
-                >
-              </li>
-              <li class="footer-navigation-menu-item">
-                <a class="footer-navigation-menu-link hover-effect" href="#"
-                  >Reading List</a
-                >
-              </li>
-            </ul>
-          </nav>
           <div class="footer-copyration">
             Not Copyright 2020 • Robin Williams. Webflow cloneable
           </div>
