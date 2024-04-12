@@ -41,16 +41,22 @@
           </button>
           <ul class="header-menu-list">
             <li class="header-menu-item">
-              <a class="header-menu-link" href="#">Experience</a>
+              <a class="header-menu-link hover-effect" href="#experience"
+                >Experience</a
+              >
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-link" href="#">Work</a>
+              <a class="header-menu-link hover-effect" href="#projects">Work</a>
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-link" href="#">Photography</a>
+              <a class="header-menu-link hover-effect" href="#photography"
+                >Photography</a
+              >
             </li>
             <li class="header-menu-item">
-              <a class="header-menu-link" href="#">Contact</a>
+              <a class="header-menu-link hover-effect" href="#footer"
+                >Contact</a
+              >
             </li>
           </ul>
         </nav>
@@ -111,7 +117,7 @@
       </section>
 
       <!-- SECTION WORK EXPERIENCE -->
-      <section class="experience">
+      <section id="experience" class="experience">
         <div class="container experience-container">
           <h2 class="experience-title">Work experience</h2>
           <p class="experience-paragraph">
@@ -293,12 +299,14 @@
       </section>
 
       <!-- SECTION MY PROJECTS -->
-      <section class="projects">
+      <section id="projects" class="projects">
         <div class="container projects-container">
-          <h2 class="projects-title">My projects</h2>
-          <h3 class="projects-subtitle">
-            Work that I’ve done for the past 8 years
-          </h3>
+          <div class="projects-title-box">
+            <h2 class="projects-title">My projects</h2>
+            <h3 class="projects-subtitle">
+              Work that I’ve done for the past 8 years
+            </h3>
+          </div>
           <ul class="projects-list">
             <li class="projects-list-item">
               <picture class="projects-item-image">
@@ -465,6 +473,7 @@
               </div>
             </li>
           </ul>
+          <button class="projects-btn" type="button">View all projects</button>
         </div>
       </section>
 
@@ -509,7 +518,7 @@
                 />
                 <source
                   media="(min-width: 360px)"
-                  src="./images/mobile-philosophy-instagram.jpg"
+                  srcset="./images/mobile-philosophy-instagram.jpg"
                 />
                 <img
                   class="social-instagram-img"
@@ -706,7 +715,7 @@
       </section>
 
       <!-- PHOTOGRAPHY -->
-      <section class="photography">
+      <section id="photography" class="photography">
         <div class="container photography-container">
           <h2 class="photography-title">Photography</h2>
           <p class="photography-paragraph">
@@ -887,7 +896,7 @@
       </section>
 
       <!-- FOOTER -->
-      <section class="footer">
+      <section id="footer" class="footer">
         <div class="container footer-container">
           <div class="footer-box">
             <div class="footer-logo-social-box">
