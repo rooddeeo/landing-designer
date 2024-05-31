@@ -23,7 +23,7 @@
   <body>
     <!-- HEADER -->
 
-    <header class="header">
+    <header id="header" class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a class="header-logo" href="./index.html">
@@ -34,11 +34,6 @@
               height="24"
             />
           </a>
-          <button type="button" class="header-mob-btn">
-            <svg class="header-btn-icon" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-mob-menu"></use>
-            </svg>
-          </button>
           <ul class="header-menu-list">
             <li class="header-menu-item">
               <a class="header-menu-link hover-effect" href="#experience"
@@ -59,7 +54,107 @@
               >
             </li>
           </ul>
+          <button
+            type="button"
+            class="header-mob-btn-open"
+            onclick="toggleMenu()"
+          >
+            <svg class="header-btn-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-mob-menu"></use>
+            </svg>
+          </button>
         </nav>
+
+        <!-- mobile menu -->
+        <div class="backdrop" onclick="toggleMenu()"></div>
+        <div class="header-mob-menu">
+          <button
+            type="button"
+            class="header-mob-btn-close"
+            onclick="toggleMenu()"
+          >
+            <svg class="header-btn-icon" width="10" height="10">
+              <use href="./images/icons.svg#icon-close-black"></use>
+            </svg>
+          </button>
+          <ul class="header-mob-menu-list">
+            <li class="header-mob-menu-item">
+              <a
+                class="header-mob-menu-link hover-effect"
+                onclick="toggleMenu()"
+                href="#experience"
+                >Experience</a
+              >
+            </li>
+            <li class="header-mob-menu-item">
+              <a
+                class="header-mob-menu-link hover-effect"
+                onclick="toggleMenu()"
+                href="#projects"
+                >Work</a
+              >
+            </li>
+            <li class="header-mob-menu-item">
+              <a
+                class="header-mob-menu-link hover-effect"
+                onclick="toggleMenu()"
+                href="#photography"
+                >Photography</a
+              >
+            </li>
+            <li class="header-mob-menu-item">
+              <a
+                class="header-mob-menu-link hover-effect"
+                onclick="toggleMenu()"
+                href="#footer"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="header-mob-social">
+            <ul class="header-mob-social-list">
+              <li class="header-mob-social-list-item">
+                <a class="header-mob-social-item-link" href="#">
+                  <svg
+                    class="header-mob-social-link-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use
+                      class="header-mob-social-icon-twitter"
+                      href="./images/icons.svg#icon-twitter"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="header-mob-social-list-item">
+                <a class="header-mob-social-item-link" href="#">
+                  <svg
+                    class="header-mob-social-link-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use
+                      class="header-mob-social-icon-dribbble"
+                      href="./images/icons.svg#icon-dribbble"
+                    ></use></svg
+                ></a>
+              </li>
+              <li class="header-mob-social-list-item">
+                <a class="header-mob-social-item-link" href="#">
+                  <svg
+                    class="header-mob-social-link-icon"
+                    width="24"
+                    height="24"
+                  >
+                    <use
+                      class="header-mob-social-icon-linkedIn"
+                      href="./images/icons.svg#icon-linkedIn"
+                    ></use></svg
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -219,7 +314,7 @@
           <ul class="skillset-list">
             <li class="skillset-list-item">
               <svg class="skillset-item-icon" width="25" height="32">
-                <use href="./images/symbol-defs.svg#icon-product-design"></use>
+                <use href="./images/icons.svg#icon-product-design"></use>
               </svg>
               <h3 class="skillset-item-title">Product Design</h3>
               <p class="skillset-item-paragraph">
@@ -229,7 +324,7 @@
             </li>
             <li class="skillset-list-item">
               <svg class="skillset-item-icon" width="32" height="32">
-                <use href="./images/symbol-defs.svg#icon-visual-design"></use>
+                <use href="./images/icons.svg#icon-visual-design"></use>
               </svg>
               <h3 class="skillset-item-title">Visual Design</h3>
               <p class="skillset-item-paragraph">
@@ -241,7 +336,7 @@
               <svg class="skillset-item-icon" width="25" height="32">
                 <use
                   class="bg-none"
-                  href="./images/symbol-defs.svg#icon-motion-design"
+                  href="./images/icons.svg#icon-motion-design"
                 ></use>
               </svg>
               <h3 class="skillset-item-title">Motion Design</h3>
@@ -253,7 +348,7 @@
             </li>
             <li class="skillset-list-item">
               <svg class="skillset-item-icon" width="32" height="32">
-                <use href="./images/symbol-defs.svg#icon-photography"></use>
+                <use href="./images/icons.svg#icon-photography"></use>
               </svg>
               <h3 class="skillset-item-title">Photography</h3>
               <p class="skillset-item-paragraph">
@@ -266,32 +361,32 @@
           <ul class="skillset-list-icon">
             <li class="skillset-list-icon-item">
               <svg class="skillset-list-icon-svg" width="85" height="21">
-                <use href="./images/symbol-defs.svg#icon-cbre"></use>
+                <use href="./images/icons.svg#icon-cbre"></use>
               </svg>
             </li>
             <li class="skillset-list-icon-item">
               <svg class="skillset-list-icon-svg" width="71" height="29">
-                <use href="./images/symbol-defs.svg#icon-epiq"></use>
+                <use href="./images/icons.svg#icon-epiq"></use>
               </svg>
             </li>
             <li class="skillset-list-icon-item">
               <svg class="skillset-list-icon-svg" width="28" height="28">
-                <use href="./images/symbol-defs.svg#icon-f"></use>
+                <use href="./images/icons.svg#icon-f"></use>
               </svg>
             </li>
             <li class="skillset-list-icon-item">
               <svg class="skillset-list-icon-svg" width="21" height="21">
-                <use href="./images/symbol-defs.svg#icon-fresh"></use>
+                <use href="./images/icons.svg#icon-fresh"></use>
               </svg>
             </li>
             <li class="skillset-list-icon-item">
               <svg class="skillset-list-icon-svg" width="154" height="25">
-                <use href="./images/symbol-defs.svg#icon-place-for-mom"></use>
+                <use href="./images/icons.svg#icon-place-for-mom"></use>
               </svg>
             </li>
             <li class="skillset-list-icon-item">
               <svg class="skillset-list-icon-svg" width="42" height="21">
-                <use href="./images/symbol-defs.svg#icon-vector"></use>
+                <use href="./images/icons.svg#icon-vector"></use>
               </svg>
             </li>
           </ul>
@@ -920,7 +1015,7 @@
                       >
                         <use
                           class="footer-social-icon-twitter"
-                          href="./images/symbol-defs.svg#icon-twitter"
+                          href="./images/icons.svg#icon-twitter"
                         ></use></svg
                     ></a>
                   </li>
@@ -933,7 +1028,7 @@
                       >
                         <use
                           class="footer-social-icon-dribbble"
-                          href="./images/symbol-defs.svg#icon-dribbble"
+                          href="./images/icons.svg#icon-dribbble"
                         ></use></svg
                     ></a>
                   </li>
@@ -946,7 +1041,7 @@
                       >
                         <use
                           class="footer-social-icon-linkedIn"
-                          href="./images/symbol-defs.svg#icon-linkedIn"
+                          href="./images/icons.svg#icon-linkedIn"
                         ></use></svg
                     ></a>
                   </li>
@@ -998,6 +1093,15 @@
           </div>
         </div>
       </section>
+      <div class="scrollUp">
+        <button type="button" class="scrollUp-btn">
+          <a class="scrollUp-btn-link" href="#header"
+            ><svg class="scrollUp-btn-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-arrow-up"></use></svg
+          ></a>
+        </button>
+      </div>
     </main>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
