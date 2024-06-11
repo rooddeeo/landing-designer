@@ -55,7 +55,8 @@ body {
   transition: all 0.5s;
 }
 
-.hover-effect:hover:after {
+.hover-effect:hover:after,
+.hover-effect:focus:after {
   width: 100%;
 }
 
@@ -139,12 +140,12 @@ body {
   fill: #ffffff;
 }
 
-.header-mob-menu-link {
-  color: var(--peach-accent);
+.header-mob-menu-list {
+  margin-bottom: 40px;
 }
 
-.header-mob-menu-item {
-  margin-bottom: 20px;
+.header-mob-menu-link {
+  color: var(--peach-accent);
 }
 
 .header-mob-menu-item:not(:last-child) {
@@ -611,7 +612,8 @@ body {
   transition: all 0.3s ease;
 }
 
-.photography-btn:hover {
+.photography-btn:hover,
+.photography-btn:focus {
   background-color: var(--primary);
 }
 
@@ -740,7 +742,8 @@ body {
   height: 100%;
 }
 
-.started-form-submit:hover:after {
+.started-form-submit:hover:after,
+.started-form-submit:focus:after {
   width: 100%;
 }
 
@@ -1317,7 +1320,8 @@ body {
     bottom: 231px;
   }
 
-  .projects-btn:hover {
+  .projects-btn:hover,
+  .projects-btn:focus {
     background-color: var(--primary);
   }
 
