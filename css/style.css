@@ -798,6 +798,17 @@ body {
   gap: 16px;
 }
 
+.footer-social-list-item,
+.header-mob-social-list-item {
+  display: flex;
+}
+
+.footer-social-item-link,
+.header-mob-social-item-link {
+  width: 24px;
+  height: 24px;
+}
+
 .footer-social-icon-twitter,
 .header-mob-social-icon-twitter {
   fill: #26a7de;
@@ -833,9 +844,6 @@ body {
   line-height: 1.5;
 }
 
-.scrollUp {
-}
-
 .scrollUp-btn {
   position: fixed;
   bottom: 20px;
@@ -847,6 +855,17 @@ body {
   background-color: transparent;
   border: 1px solid #ffffff;
   backdrop-filter: blur(2px);
+}
+
+.scrollUp-btn-link {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -1px;
+  left: -1px;
 }
 
 .scrollUp-btn-icon {

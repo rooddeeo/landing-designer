@@ -991,14 +991,27 @@
           </div>
           <form class="started-form">
             <div class="started-form-box">
-              <label class="started-form-box-label">Name</label>
-              <input class="started-form-box-input" type="text" name="Name" />
-              <label class="started-form-box-label">Email</label>
-              <input class="started-form-box-input" type="email" name="Email" />
-              <label class="started-form-box-label">Message</label>
+              <label class="started-form-box-label" for="name">Name</label>
+              <input
+                class="started-form-box-input"
+                type="text"
+                id="name"
+                name="Name"
+              />
+              <label class="started-form-box-label" for="email">Email</label>
+              <input
+                class="started-form-box-input"
+                type="email"
+                id="email"
+                name="Email"
+              />
+              <label class="started-form-box-label" for="message"
+                >Message</label
+              >
               <textarea
                 class="started-form-box-input"
                 type="text"
+                id="message"
                 name="Message"
               ></textarea>
             </div>
@@ -1026,7 +1039,11 @@
               <div class="footer-social">
                 <ul class="footer-social-list">
                   <li class="footer-social-list-item">
-                    <a class="footer-social-item-link" href="#">
+                    <a
+                      class="footer-social-item-link"
+                      href="#"
+                      aria-label="twitter"
+                    >
                       <svg
                         class="footer-social-link-icon"
                         width="24"
@@ -1039,7 +1056,11 @@
                     ></a>
                   </li>
                   <li class="footer-social-list-item">
-                    <a class="footer-social-item-link" href="#">
+                    <a
+                      class="footer-social-item-link"
+                      href="#"
+                      aria-label="dribbble"
+                    >
                       <svg
                         class="footer-social-link-icon"
                         width="24"
@@ -1052,7 +1073,11 @@
                     ></a>
                   </li>
                   <li class="footer-social-list-item">
-                    <a class="footer-social-item-link" href="#">
+                    <a
+                      class="footer-social-item-link"
+                      href="#"
+                      aria-label="linkedIn"
+                    >
                       <svg
                         class="footer-social-link-icon"
                         width="24"
@@ -1113,8 +1138,11 @@
         </div>
       </section>
       <div class="scrollUp">
-        <button type="button" class="scrollUp-btn">
-          <a class="scrollUp-btn-link" href="#header"
+        <button type="button" class="scrollUp-btn" aria-label="Page scroll up">
+          <a
+            class="scrollUp-btn-link"
+            href="#header"
+            aria-label="Scroll to the up page"
             ><svg class="scrollUp-btn-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-arrow-up"></use></svg
           ></a>
